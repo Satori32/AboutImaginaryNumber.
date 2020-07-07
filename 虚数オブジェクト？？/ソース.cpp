@@ -21,7 +21,7 @@ public:
 		return In;
 	}
 	/**/
-	Float operator ()() const{
+	Float Map() const{
 		return F * I;
 	}
 
@@ -47,9 +47,9 @@ int main() {
 
 	Imaginary<> i = 256;
 
-	i = 10;
+	i = 1.9;
 
-	std::cout << i()<<':'<<i.GetInt()<<':'<<i.GetFloat() << std::endl;
+	std::cout << i.Map()<<':'<<i.GetInt()<<':'<<i.GetFloat() << std::endl;
 
 	return 0;
 
