@@ -2,7 +2,7 @@
 
 //Explanation the 虚数？？
 
-template<class Float=double,class Int = long long int>//[Int] is your Infinity.it is fuse number.巨数。
+template<class Float=double,class Int = long long int>//[Int] is your Infinity for OneThing.it is fuse number.巨数。
 class Imaginary {
 public:
 	Imaginary() = delete;
