@@ -8,15 +8,15 @@ public:
 	Imaginary() = delete;
 	Imaginary(const Int& Max):I(Max) {}
 
-	operator Float& () const{
+	operator const Float& () const{
 		return F;
 	}
-
+	/**/
 	operator Float& (){
 		return F;
 	}
 	/**/
-	Float operator =(const Float In) {
+	Float operator =(const Float& In) {
 		F = In;
 		return In;
 	}
@@ -50,6 +50,8 @@ int main() {
 	i = 1.9;
 
 	std::cout << i.Map()<<':'<<i.GetInt()<<':'<<i.GetFloat() << std::endl;
+
+	std::cout << i << std::endl;
 
 	return 0;
 
